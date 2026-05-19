@@ -20,14 +20,17 @@ connection.close()
 
 def reservas():
     matricula_digitada = matr_var.get()
+    tipo = tipo_quarto.get()
+
     if matricula_digitada in lista_matriculas:
- 
+
         print("Acesso garantido! Aluno matriculado.")
- 
- 
+        print("Tipo de quarto:", tipo)
+
         nome = name_var.get()
+
     else:
- 
+
         print("Acesso negado! Matrícula não encontrada.")
  
 def PegaValores():
